@@ -53,7 +53,6 @@
 }
 
 .asbackground-chip1 {
-  background-image: url('./assets/images/first-page/background/primary-bg-chip.png');
   background-color: #283C6D;
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -61,7 +60,6 @@
 }
 
 .asbackground-chip2 {
-  background-image: url('./assets/images/first-page/background/secondary-bg-chip.png');
   background-color: #DBE3F1;
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -69,7 +67,6 @@
 }
 
 .asbackground-quadro1 {
-  background-image: url('./assets/images/first-page/background/primary-bg-quadro.png');
   background-color: #283C6D;
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -77,7 +74,6 @@
 }
 
 .asbackground-quadro2 {
-  background-image: url('./assets/images/first-page/background/secondary-bg-quadro.png');
   background-color: #DBE3F1;
   background-repeat: no-repeat;
   background-position: bottom right;
