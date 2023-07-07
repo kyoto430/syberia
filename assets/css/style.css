@@ -1,0 +1,205 @@
+/*==================== FONTS ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;700&display=swap');
+
+/*==================== BASE ====================*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+.asbody {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 14px;
+  color: #0F0F0F;
+  background-color: #fff;
+  font-weight: 500;
+}
+
+.astitle {
+  margin: 58px 0 36px 0;
+
+  font-size: 48px;
+  color: #fff;
+}
+
+.astext-black {
+  color: #0F0F0F !important;
+}
+
+.asdescription {
+  font-size: 16px;
+  color: #fff;
+}
+
+.astext-16 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.astext-14 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.asimage {
+  max-width: 100%;
+  height: auto;
+}
+
+.asbackground-dark {
+  background-color: #283C6D;
+}
+
+.asbackground-chip1 {
+  background-image: url('/assets/images/first-page/background/primary-bg-chip.png');
+  background-color: #283C6D;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+}
+
+.asbackground-chip2 {
+  background-image: url('/assets/images/first-page/background/secondary-bg-chip.png');
+  background-color: #DBE3F1;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+}
+
+.asbackground-quadro1 {
+  background-image: url('/assets/images/first-page/background/primary-bg-quadro.png');
+  background-color: #283C6D;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+}
+
+.asbackground-quadro2 {
+  background-image: url('/assets/images/first-page/background/secondary-bg-quadro.png');
+  background-color: #DBE3F1;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+}
+
+/*==================== LAYOUT ====================*/
+.ascontainer {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.aswrapper {
+  margin-top: 100px;
+}
+
+/*==================== FIRST PAGE ====================*/
+.ascontainer-preview {
+  display: flex;
+
+  height: 347px;
+}
+
+.asadvantages-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 38px 0 32px 0;
+  gap: 75px;
+  list-style: none;
+}
+
+.asadvantages-item {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.asitem-container{
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.asadvantages-icon1 {
+  width: 76px;
+  height: auto;
+}
+
+.asadvantages-icon2 {
+  width: 48px;
+  height: auto;
+}
+
+.asadvantages-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.asadvantages-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  color: #7C7C7C;
+}
+
+.ascontainer-composition {
+  display: flex;
+ 
+  height: 330px;
+}
+
+.ascomposition-left {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin: 42px 0 0 72px;
+}
+
+.ascomposition-title {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.ascomposition-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 42px;
+  gap: 47px;
+}
+
+.ascomposition-description {
+  margin-top: 23px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #7C7C7C;
+}
+
+.ascomposition-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 33px;
+  gap: 16px;
+  list-style-position: inside;
+}
+
+.ascomposition-item {
+  font-size: 16px;
+}
+
+.ascomposition-item::marker {
+  color: #3D89EC;
+}
+
+.ascontainer-sheme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.asquadro {
+  margin-top: 79px;
+  margin-bottom: 57px;
+}
