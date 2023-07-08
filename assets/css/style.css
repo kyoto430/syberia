@@ -101,7 +101,7 @@
 .asbackground-chip2 {
   background-color: #dbe3f1;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: bottom right;
 }
 
 .asbackground-quadro1 {
@@ -125,7 +125,7 @@
 .asbackground-bridge2 {
   background-color: #dbe3f1;
   background-repeat: no-repeat;
-  background-position: 80%;
+  background-position: bottom right;
 }
 
 .asbackground-detector1 {
@@ -232,6 +232,10 @@
   color: #7c7c7c;
 }
 
+.asdetector-desc {
+  max-width: 439px  ;
+}
+
 .ascomposition-list {
   display: flex;
   flex-direction: column;
@@ -280,6 +284,8 @@
   margin-top: 79px;
   margin-bottom: 57px;
 }
+
+/* PAGE2 */
 
 /*==================== MEDIA ====================*/
 @media (max-width: 1240px) {
@@ -372,8 +378,16 @@
     font-size: 36px;
   }
 
-  .asdescription {
+  .astelemetry-desc {
     max-width: 197px;
+  }
+
+  .asdetector-desc {
+    max-width: 200px;
+  }
+
+  .asquadro-desc {
+    max-width: 152px;
   }
 
   .ascontainer {
@@ -395,6 +409,15 @@
     gap: 50px;
   }
 
+  .asbride-list {
+    max-width: 360px;
+    gap: 21px;
+  }
+
+  .ascontainer-sheme {
+    padding: 0 5px 0 5px;
+  }
+
 }
 
 @media (max-width: 425px) {
@@ -402,12 +425,24 @@
     background-size: 280%;
   }
 
+  .asbackground-quadro2 {
+    background: none;
+  }
+
+  .asbackground-bridge1 {
+    background-position: 30%;
+  }
+
   .ascomposition-list {
-    max-width: 80%;
+    max-width: 57%;
   }
 
   .ascomposition-left {
-    max-width: 70%;
+    max-width: 75%;
+  }
+
+  .asquadro-width {
+    max-width: 100%;
   }
 
   .asbackground-info {
@@ -419,6 +454,17 @@
   }
 
   .asbackground-detector2 {
-    background-position: bottom left;
+    background-position: -80%;
+    background-size: 120%;
+  }
+
+  .asbride-list {
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 375px) {
+  .asbackground-bridge2 {
+    background-size: 40%;
   }
 }
