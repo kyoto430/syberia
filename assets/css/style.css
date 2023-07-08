@@ -12,7 +12,7 @@
 .asbody {
   font-family: 'Exo 2', sans-serif;
   font-size: 14px;
-  color: #0F0F0F;
+  color: #0f0f0f;
   background-color: #fff;
   font-weight: 500;
 }
@@ -25,7 +25,7 @@
 }
 
 .astext-black {
-  color: #0F0F0F !important;
+  color: #0f0f0f !important;
 }
 
 .asdescription {
@@ -48,36 +48,47 @@
   height: auto;
 }
 
+.asrelative {
+  position: relative;
+}
+
 .asbackground-dark {
-  background-color: #283C6D;
+  background-color: #283c6d;
+}
+
+.asbackground-info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 13px;
+  padding-top: 28px;
+
+  width: 415px;
+  height: 131px;
 }
 
 .asbackground-chip1 {
-  background-color: #283C6D;
+  background-color: #283c6d;
   background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: contain;
+  background-position: center;
 }
 
 .asbackground-chip2 {
-  background-color: #DBE3F1;
+  background-color: #dbe3f1;
   background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: contain;
+  background-position: right;
 }
 
 .asbackground-quadro1 {
-  background-color: #283C6D;
+  background-color: #283c6d;
   background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: contain;
+  background-position: center;
 }
 
 .asbackground-quadro2 {
-  background-color: #DBE3F1;
+  background-color: #dbe3f1;
   background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: contain;
+  background-position: right;
 }
 
 /*==================== LAYOUT ====================*/
@@ -94,14 +105,14 @@
 .ascontainer-preview {
   display: flex;
 
-  height: 347px;
+  min-height: 347px;
 }
 
 .asadvantages-list {
   display: flex;
   justify-content: space-between;
   margin: 38px 0 32px 0;
-  gap: 75px;
+  gap: 80px;
   list-style: none;
 }
 
@@ -112,7 +123,7 @@
   gap: 25px;
 }
 
-.asitem-container{
+.asitem-container {
   display: flex;
   flex-direction: column;
 
@@ -137,13 +148,12 @@
 .asadvantages-subtitle {
   font-size: 14px;
   font-weight: 400;
-  color: #7C7C7C;
+  color: #7c7c7c;
 }
 
 .ascontainer-composition {
   display: flex;
- 
-  height: 330px;
+  min-height: 330px;
 }
 
 .ascomposition-left {
@@ -169,7 +179,7 @@
   margin-top: 23px;
   font-size: 14px;
   font-weight: 400;
-  color: #7C7C7C;
+  color: #7c7c7c;
 }
 
 .ascomposition-list {
@@ -185,7 +195,7 @@
 }
 
 .ascomposition-item::marker {
-  color: #3D89EC;
+  color: #3d89ec;
 }
 
 .ascontainer-sheme {
@@ -195,7 +205,157 @@
   margin-top: 40px;
 }
 
+.asimage-telemetry {
+  padding-top: 45px;
+}
+
+.asinfo {
+  position: absolute;
+  top: 0;
+  left: 25%;
+}
+
+.asinfo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.asinfo-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .asquadro {
   margin-top: 79px;
   margin-bottom: 57px;
+}
+
+/*==================== MEDIA ====================*/
+@media (max-width: 1240px) {
+  .asdescription {
+    max-width: 80%;
+  }
+
+  .ascontainer {
+    max-width: 1024px;
+  }
+
+  .aswrapper {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .ascontainer {
+    max-width: 730px;
+  }
+
+  .aswrapper {
+    margin-top: 50px;
+  }
+
+  .asinfo {
+    left: 15%;
+  }
+
+  .asbackground-quadro2 {
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+@media (max-width: 768px) {
+  .asdescription {
+    max-width: 60%;
+  }
+
+  .ascontainer {
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aswrapper {
+    margin-top: 30px;
+  }
+
+  .asadvantages-list {
+    flex-direction: column;
+    margin: 32px 0 32px 0;
+    gap: 14px;
+  }
+
+  .asadvantages-item {
+    width: 100%;
+  }
+
+  .ascomposition-left {
+    max-width: 65%;
+    margin: 42px 0 0 15px;
+  }
+
+  .asimage-telemetry {
+    padding-top: 0;
+  }
+
+  .asinfo {
+    position: initial;
+  }
+
+  .asquadro {
+    margin-top: 23px;
+    margin-bottom: 57px;
+  }
+}
+
+@media (max-width: 576px) {
+  .astitle {
+    font-size: 36px;
+  }
+
+  .asdescription {
+    max-width: 197px;
+  }
+
+  .ascontainer {
+    max-width: 100%;
+    padding: 0 16px 0 16px;
+  }
+
+  .aswrapper {
+    margin-top: 0px;
+  }
+
+  .ascomposition-left {
+    margin: 42px 0 35px 0;
+  }
+
+  .ascomposition-list {
+    max-width: 56%;
+    margin-top: 23px;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 425px) {
+  .asbackground-chip2 {
+    background-size: 280%;
+  }
+
+  .ascomposition-list {
+    max-width: 80%;
+  }
+
+  .ascomposition-left {
+    max-width: 70%;
+  }
+
+  .asbackground-info {
+    padding: 10px 5px 15px 10px;
+  }
+
+  .asinfo {
+    width: 260px;
+  }
 }
