@@ -28,7 +28,20 @@
   color: #0f0f0f !important;
 }
 
+.astext-white {
+  color: #fff !important;
+}
+
+.astext-gray {
+  color: #7C7C7C !important;
+}
+
+.astext-bold {
+  font-weight: bold !important;
+}
+
 .asdescription {
+  max-width: 55%;
   font-size: 16px;
   color: #fff;
 }
@@ -48,12 +61,24 @@
   height: auto;
 }
 
+.asmt {
+  margin-top: 38px !important;
+}
+
 .asrelative {
   position: relative;
 }
 
+.asnowrap {
+  flex-wrap: nowrap !important;
+}
+
 .asbackground-dark {
   background-color: #283c6d;
+}
+
+.asbackground-dark2 {
+  background-color: #2F477F;
 }
 
 .asbackground-info {
@@ -91,6 +116,30 @@
   background-position: right;
 }
 
+.asbackground-bridge1 {
+  background-color: #2F477F;
+  background-repeat: no-repeat;
+  background-position: 70%;
+}
+
+.asbackground-bridge2 {
+  background-color: #dbe3f1;
+  background-repeat: no-repeat;
+  background-position: 80%;
+}
+
+.asbackground-detector1 {
+  background-color: #283c6d;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.asbackground-detector2 {
+  background-color: #dbe3f1;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
 /*==================== LAYOUT ====================*/
 .ascontainer {
   max-width: 1180px;
@@ -110,14 +159,15 @@
 
 .asadvantages-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 38px 0 32px 0;
-  gap: 80px;
+  gap: 25px;
   list-style: none;
 }
 
 .asadvantages-item {
-  width: 50%;
+  width: 48%;
   display: flex;
   align-items: flex-start;
   gap: 25px;
@@ -153,7 +203,7 @@
 
 .ascontainer-composition {
   display: flex;
-  min-height: 330px;
+  min-height: 312px;
 }
 
 .ascomposition-left {
@@ -263,6 +313,10 @@
     background-position: center;
     background-size: contain;
   }
+
+  .asbackground-detector2 {
+    background-position: 500%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -307,6 +361,10 @@
     margin-top: 23px;
     margin-bottom: 57px;
   }
+
+  .asbackground-detector2 {
+    background-position: -35%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -336,6 +394,7 @@
     margin-top: 23px;
     gap: 50px;
   }
+
 }
 
 @media (max-width: 425px) {
@@ -357,5 +416,9 @@
 
   .asinfo {
     width: 260px;
+  }
+
+  .asbackground-detector2 {
+    background-position: bottom left;
   }
 }
