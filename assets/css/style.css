@@ -73,6 +73,30 @@
   flex-wrap: nowrap !important;
 }
 
+.asflex-col {
+  flex-direction: column !important;
+}
+
+.asmax-width {
+  width: 100% !important;
+}
+
+.aswidth-50 {
+  width: 50% !important;
+}
+
+.asmb-86 {
+  margin-bottom: 86px !important;
+}
+
+.asgap-48 {
+  gap: 48px !important;
+}
+
+.asmt-9 {
+  margin-top: 9px !important;
+}
+
 .asbackground-dark {
   background-color: #283c6d;
 }
@@ -138,6 +162,12 @@
   background-color: #dbe3f1;
   background-repeat: no-repeat;
   background-position: right;
+}
+
+.asbackground-service1 {
+  background-color: #283c6d;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*==================== LAYOUT ====================*/
@@ -225,6 +255,11 @@
   gap: 47px;
 }
 
+.asadvantages-wrapper {
+  display: flex;
+  gap: 26px;
+}
+
 .ascomposition-description {
   margin-top: 23px;
   font-size: 14px;
@@ -285,7 +320,31 @@
   margin-bottom: 57px;
 }
 
+.asservice-list {
+  max-width: 439px !important;
+  gap: 16px !important;
+}
+
 /* PAGE2 */
+
+/* PAGE3 */
+.asservice-list2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  row-gap: 24px;
+  margin-left: 75px;
+  list-style-position: inside;
+}
+
+.asservice-item {
+  list-style: inside;
+}
+
+.asservice-title {
+  font-size: 32px;
+  font-weight: bold;
+}
 
 /*==================== MEDIA ====================*/
 @media (max-width: 1240px) {
@@ -370,6 +429,19 @@
 
   .asbackground-detector2 {
     background-position: -35%;
+  }
+
+  .asservice-list2 {
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  .aswidth-50 {
+    width: 100% !important;
+  }
+
+  .asmb-86 {
+    margin-bottom: 48px !important;
   }
 }
 
@@ -460,6 +532,14 @@
 
   .asbride-list {
     max-width: 360px;
+  }
+
+  .asadvantages-wrapper {
+    gap: 10px;
+  }
+
+  .asservice-list2 {
+    margin-left: 60px;
   }
 }
 
