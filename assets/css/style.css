@@ -11,8 +11,8 @@
 
 .asul {
   display: flex;
-    list-style: none;
-    justify-content: space-around;
+  list-style: none;
+  flex-direction: column;
 }
 
 .asbody {
@@ -205,6 +205,11 @@
 
 /*==================== LAYOUT ====================*/
 .ascontainer {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.ascontainer2 {
   max-width: 1180px;
   margin: 0 auto;
 }
@@ -517,7 +522,7 @@
 }
 .ascolumn-list {
   display: flex;
-  width: 478px;
+  max-width: 478px;
   flex-direction: column;
   gap: 4px;
   list-style-position: inside;
@@ -613,7 +618,7 @@
   font-size: 16px;
 }
 .asblock6-text {
-  width: 335px;
+  max-width: 335px;
   font-size: 16px;
   color: #7c7c7c;
 }
@@ -687,6 +692,11 @@
     max-width: 730px;
   }
 
+  .ascontainer2 {
+    max-width: 100%;
+    margin: 0 16px;
+  }
+
   .aswrapper {
     margin-top: 50px;
   }
@@ -702,6 +712,10 @@
 
   .asbackground-detector2 {
     background-position: 500%;
+  }
+
+  .asblock7-img {
+    max-width: calc(321px - 16px);
   }
 }
 
@@ -764,6 +778,23 @@
   .asmb-86 {
     margin-bottom: 48px !important;
   }
+
+  .asblock5-column {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .asblock5-column2 {
+    gap: 25px;
+  }
+
+  .asblock7-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .asblock7-img {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -809,6 +840,67 @@
 
   .ascontainer-sheme {
     padding: 0 5px 0 5px;
+  }
+
+  .ascompany-preview {
+    padding: 32px 0 66px 0;
+  }
+
+  .ascompany-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .ascompany-block1 {
+    text-align: center;
+  }
+
+  .ascompany-block2 {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .ascompany-block3 {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+
+  .asblock3-item {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .asblock3-text {
+    text-align: center;
+  }
+
+  .ascompany-block4 {
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .asblock5-column2 {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .asblock6-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .asblock7-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
 
