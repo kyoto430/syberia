@@ -6,7 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .asul {
@@ -119,6 +119,10 @@
 
 .asmb-86 {
   margin-bottom: 86px !important;
+}
+
+.asmb-60 {
+  margin-bottom: 60px !important;
 }
 
 .asgap-48 {
@@ -260,6 +264,12 @@
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: contain;
+}
+
+.asbackground-dynamic {
+  background-color: #dbe3f1;
+  background-repeat: no-repeat;
+  background-position: 90% center;
 }
 
 /*==================== LAYOUT ====================*/
@@ -826,6 +836,7 @@
 .asblock10-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   row-gap: 25px;
   margin-top: 25px;
 }
@@ -838,6 +849,7 @@
 .asblock10-wrapper {
   display: flex;
   flex-direction: column;
+  gap: 3px;
 }
 
 .astechno-block {
@@ -898,16 +910,101 @@
   flex-direction: column;
 }
 
-.asblock11 {
-}
 .asblock11-wrapper {
+  margin-top: 65px;
   display: flex;
-  gap: 25px;
+  gap: 190px;
 }
+
 .asblock11-list {
- 
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
 }
-.asblock11-item {
+
+.asblock11-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.asblock11-list2 {
+  position: absolute;
+  top: 23%;
+  right: 10%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.aslist2-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.aslist2-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.asblock12 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.asblock12 {
+  max-width: 100%;
+  display: flex;
+  gap: 150px;
+  margin: 47px 0 0 80px;
+}
+
+.asblock12-title {
+  max-width: 352px;
+  font-size: 32px;
+  font-weight: bold;
+}
+.asblock12-wrapper {
+  max-width: 368px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.asblock13 {
+  max-width: 637px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 35px 0 100px 60px;
+}
+
+.asblock13-title {
+  font-size: 48px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.asblock13-subtitle {
+  font-size: 16px;
+  color: #fff;
+}
+
+.asblock10-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.asblock14-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-left: 15px;
+}
+.asblock14-item {
 }
 
 /*==================== MEDIA ====================*/
