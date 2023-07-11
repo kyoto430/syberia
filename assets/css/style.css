@@ -109,6 +109,10 @@
   flex-direction: column !important;
 }
 
+.asflex-start{
+  align-items: flex-start !important;
+}
+
 .asmax-width {
   width: 100% !important;
 }
@@ -801,13 +805,13 @@
 }
 
 .asblock9-background {
-  max-width: 480px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
-  padding: 46px 0 53px 60px;
+  padding: 46px 0 53px 94px;
 }
 
 .asblock9-title {
@@ -898,7 +902,7 @@
   justify-content: center;
   align-items: flex-start;
   gap: 65px;
-  padding: 78px 0 78px 60px;
+  padding: 78px 0 78px 94px;
 }
 
 .asblock9-list {
@@ -917,7 +921,7 @@
 }
 
 .asblock11-list {
-  max-width: 50%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 13px;
@@ -926,6 +930,7 @@
 .asblock11-container {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -975,11 +980,11 @@
 }
 
 .asblock13 {
-  max-width: 637px;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
   gap: 28px;
-  padding: 35px 0 100px 60px;
+  padding: 33px 0 80px 60px;
 }
 
 .asblock13-title {
@@ -1004,7 +1009,53 @@
   gap: 13px;
   margin-left: 15px;
 }
-.asblock14-item {
+
+.asblock14-list2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  row-gap: 25px;
+  margin: 42px 0 35px 0;
+}
+
+.asblock15-wrapper{
+  display: flex;
+  gap: 55px ;
+}
+
+.asblock15-list {
+  position: absolute;
+  top: 0;
+  right: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.asblock15-item {
+  max-width: 260px;
+}
+.asblock15-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #182445;
+}
+
+.asimage-sheme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.asblock8-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.asblock8-title2 {
+  font-size: 32px;
+  font-weight: bold;
 }
 
 /*==================== MEDIA ====================*/
@@ -1036,6 +1087,14 @@
     margin: 0 16px;
   }
 
+  .asmt-40 {
+    margin-top: 40px;
+  }
+
+  .asmb-40 {
+    margin-bottom: 40px;
+  }
+
   .aswrapper {
     margin-top: 50px;
   }
@@ -1056,9 +1115,19 @@
   .asblock7-img {
     max-width: calc(321px - 16px);
   }
+
+  .asblock15-list {
+    right: 5%;
+    gap: 10px;
+  }
+
+  .asblock13-title {
+    font-size: 36px;
+  }
 }
 
 @media (max-width: 768px) {
+
   .asdescription {
     max-width: 60%;
   }
@@ -1133,6 +1202,69 @@
 
   .asblock7-img {
     max-width: 100%;
+  }
+
+  .asblock8-wrapper {
+    flex-direction: column;
+  }
+
+  .asblock9-background {
+    padding-left: 16px;
+  }
+
+  .asbackground-control {
+    background-size: 40%;
+    background-position: 100% bottom;
+  }
+
+  .asbackground-hide {
+    display: none;
+  }
+
+  .asinfo-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ascontainer-sheme {
+    align-items: center;
+  }
+
+  .asbackground-train {
+    background-size: cover;
+    background-position: 50%;
+  }
+
+  .asblock9-background2 {
+    max-width: 500px;
+    padding-left: 20px;
+  }
+
+  .asblock9-list {
+    gap: 30px;
+  }
+
+  .asblock11-list2 {
+    right: 5%;
+  }
+
+  .asbackground-dynamic {
+    background-size: 40%;
+    background-position: 100% center;
+  }
+
+  .asblock13 {
+    max-width: 500px;
+  }
+
+  .asbackground-asautomation1 {
+    background-position: 10%;
+    background-size: cover;
+  }
+
+  .asblock15-list {
+    position: initial;
   }
 }
 
@@ -1241,6 +1373,138 @@
     grid-template-columns: 1fr;
     gap: 20px;
   }
+
+  .asautomation-title {
+    font-size: 36px;
+  }
+
+  .asutomation-subtitle {
+    font-size: 16px;
+  }
+
+  .asautomation-block{
+    max-width: 340px;
+    padding: 32px 16px;
+  }
+
+  .asblock8-title {
+    text-align: center;
+  }
+
+  .asblock8-wrapper{
+    gap: 45px;
+  }
+
+  .asblock8-column1 {
+    align-items: center;
+  }
+
+  .asblock8-column2 {
+    gap: 25px;
+  }
+
+  .asutomation-subtitle2 {
+    margin-bottom: 12px;
+  }
+
+  .asbackground-enginer {
+    background-size: cover;
+  }
+
+  .asautomation-block1 {
+    padding-bottom: 25px;
+  }
+
+  .astechno-block {
+    max-width: 320px;
+    padding: 40px 16px 90px 16px
+  }
+
+  .asbackground-techno {
+    background-position: 50%;
+  }
+
+  .asinfo-wrapper {
+    gap: 15px;
+  }
+
+  .asspeaker-block {
+    max-width: 350px;
+    padding: 34px 16px 60px 16px;
+  }
+
+  .asblock9-list {
+    flex-direction: column;
+  }
+
+  .asblock9-background2 {
+    max-width: 340px;
+    gap: 24px;
+  }
+
+  .asblock11-wrapper {
+    gap: 50px;
+  }
+
+  .asblock11-list2 {
+    top: 10%;
+    right: 0;
+    gap: 30px;
+  }
+
+  .asblock12 {
+    position: initial;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 10px;
+  }
+
+  .asblock13 {
+    max-width: 251px;
+    padding: 33px 16px 80px 16px;
+  }
+
+  .asblock14-list2 {
+    flex-direction: column;
+  }
+
+  .asblock10-item {
+    width: 100%;
+  }
+
+  .asblock8-title2 {
+    text-align: left;
+    position: initial !important;
+  }
+
+  .asbackground-dynamic {
+    background-position: bottom right;
+    background-size: 35%;
+  }
+
+  .asblock9-background2 {
+    padding: 33px 16px 130px 16px;
+  }
+  
+  .asblock15-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .asblock15-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .asblock15-title {
+    max-width: 50%;
+    width: 50%;
+  }
 }
 
 @media (max-width: 425px) {
@@ -1288,10 +1552,56 @@
   .asservice-list2 {
     margin-left: 60px;
   }
+
+  .asblock8-column1 {
+    flex-direction: column;
+  }
+
+  .asblock11-wrapper {
+    flex-direction: column;
+    gap: 25px
+  }
+
+  .asblock11-list {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .asblock11-list2 {
+    position: initial;
+  }
+
+  .asmb-60 {
+    margin-bottom: 30px !important;
+  }
+
+  .asautomation-title, .asblock13-title {
+    font-size: 32px;
+  }
+  .asblock8-title, .asblock-title, .asblock12-title, .asblock8-title2 {
+    font-size: 30px;
+  }
+
+  .asblock9-title {
+    font-size: 20px;
+  }
+
+  .asblock15-title {
+    font-size: 18px;
+  }
+
+  .asinfo-subtitle {
+    font-size: 13px;
+  }
+  
 }
 
 @media (max-width: 375px) {
   .asbackground-bridge2 {
     background-size: 40%;
+  }
+
+  .asinfo-subtitle {
+    font-size: 12px;
   }
 }
