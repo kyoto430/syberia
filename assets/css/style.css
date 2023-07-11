@@ -1058,6 +1058,10 @@
   font-weight: bold;
 }
 
+.asblock16 {
+  
+}
+
 /*==================== MEDIA ====================*/
 @media (max-width: 1240px) {
   .asdescription {
