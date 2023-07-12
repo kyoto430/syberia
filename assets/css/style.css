@@ -310,6 +310,13 @@
   background-size: contain;
 }
 
+.asbackground-monitoring {
+  background-color: #283c6d;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
 
 /*==================== LAYOUT ====================*/
 .ascontainer {
@@ -1368,6 +1375,7 @@
 .asblock27-item2::marker {
   color: #3D89EC;
 }
+
 
 
 /*==================== MEDIA ====================*/
