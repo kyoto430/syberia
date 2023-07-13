@@ -290,6 +290,13 @@
   background-position: 90% top;
 }
 
+.asbackground-system3 {
+  background-color: #dbe3f1;
+  background-repeat: no-repeat;
+  background-position: 90% bottom;
+  background-size: contain;
+}
+
 .asbackground-cable {
   background-color: #dbe3f1;
   background-repeat: no-repeat;
@@ -465,8 +472,6 @@
   color: #7c7c7c;
 }
 
-
-
 .ascomposition-left {
   max-width: 40%;
   display: flex;
@@ -518,8 +523,6 @@
 .ascomposition-item::marker {
   color: #3d89ec;
 }
-
-
 
 .asimage-telemetry {
   padding-top: 45px;
@@ -608,6 +611,7 @@
 .asbadge {
   font-size: 16px;
   color: #fff;
+  text-align: center;
   border: 1px solid #0296ea;
   padding: 12px 20px 12px 20px;
   border-radius: 50px;
@@ -877,7 +881,7 @@
 }
 
 .asautomation-block1 {
-  margin: 47px 0 50px 0;
+  padding: 47px 0 50px 0;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -1003,8 +1007,6 @@
   align-items: flex-start;
   gap: 16px;
 }
-
-
 
 .asblock9-background2 {
   max-width: 600px;
@@ -1179,7 +1181,7 @@
 .asblock16 {
   display: flex;
   gap: 60px;
-  padding: 32px 0;
+  margin: 32px 0;
 }
 .asblock16-wrapper {
   display: flex;
@@ -1228,7 +1230,8 @@
 }
 
 .asblock18 {
-  padding-bottom: 28px;
+  margin-top: 25px;
+  margin-bottom: 28px;
 }
 
 .asblock18-title {
@@ -1263,7 +1266,8 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 50px 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .asblock20-wrapper {
@@ -1297,6 +1301,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 9px;
 }
 
@@ -1646,8 +1651,8 @@
   font-size: 16px;
 }
 
-.asblock35-item::marker{
-  color: #3D89EC;
+.asblock35-item::marker {
+  color: #3d89ec;
 }
 
 .asblock36 {
@@ -1667,8 +1672,8 @@
 
 /*==================== MEDIA ====================*/
 @media (max-width: 1240px) {
-
-  .asautomation-block, .astechno-block {
+  .asautomation-block,
+  .astechno-block {
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -1691,7 +1696,8 @@
 }
 
 @media (max-width: 1024px) {
-  .aspreview-left, .aspreview {
+  .aspreview-left,
+  .aspreview {
     padding-left: 16px;
   }
 
@@ -1702,6 +1708,11 @@
   .ascontainer2 {
     max-width: 100%;
     padding: 0 16px;
+  }
+
+  .asautomation-block1 {
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 
   .asmt-40 {
@@ -1744,6 +1755,14 @@
 
   .asblock13-title {
     font-size: 36px;
+  }
+
+  .asblock17-text {
+    max-width: 500px;
+  }
+
+  .asblock19 {
+    min-height: 820px;
   }
 }
 
@@ -1819,6 +1838,16 @@
     background-position: 30% 50%;
   }
 
+  .asbackground-system2 {
+    background-size: 45%;
+    background-position: bottom right;
+  }
+
+  .asbackground-system {
+    background-position: 50%;
+    background-size: cover;
+  }
+
   .asservice-list2 {
     flex-direction: column;
     width: fit-content;
@@ -1833,11 +1862,11 @@
   }
 
   .asexp-block5 {
-    padding: calc(58px/2) 0;
+    padding: calc(58px / 2) 0;
   }
 
   .asobjects {
-    padding: calc(48px/2) 0;
+    padding: calc(48px / 2) 0;
   }
 
   .asblock5-column {
@@ -1868,6 +1897,11 @@
   .asbackground-control {
     background-size: 40%;
     background-position: 100% bottom;
+  }
+
+  .asbackground-system3 {
+    background-position: bottom right;
+    background-size: 30%;
   }
 
   .asbackground-hide {
@@ -1905,6 +1939,7 @@
 
   .asblock13 {
     max-width: 500px;
+    padding: 33px 16px 80px 16px;
   }
 
   .asbackground-asautomation1 {
@@ -1915,6 +1950,61 @@
   .asblock15-list {
     position: initial;
   }
+
+  .asblock16 {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .asblock16-wrapper {
+    max-width: 100%;
+  }
+
+  .asblock16-list {
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+  }
+
+  .asblock17 {
+    padding: 25px 0;
+  }
+
+  .asblock17-text {
+    max-width: 350px;
+  }
+
+  .asblock18 {
+    padding-top: 50px;
+  }
+
+  .asblock18-title {
+    max-width: 335px;
+    top: 0;
+  }
+
+  .asblock19 {
+    min-height: 620px;
+  }
+  
+  .asblock19-wrapper {
+    max-width: 335px;
+    top: 5%;
+  }
+
+  .asspeaker-block {
+    padding: 34px 16px 60px 16px;
+  }
+
+  .asblock21-container {
+    max-width: 400px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 70px;
+  }
+
+
+
+  
 }
 
 @media (max-width: 576px) {
@@ -1950,12 +2040,12 @@
   .asbackground-bridge2 {
     background-size: 40%;
     background-position: bottom right;
-}
+  }
 
-.asbackground-navigation {
-  background-position: 60%;
-  background-size: cover;
-}
+  .asbackground-navigation {
+    background-position: 60%;
+    background-size: cover;
+  }
 
   .aspreview-title {
     font-size: 36px;
@@ -2085,10 +2175,7 @@
 
   .asbackground-enginer {
     background-size: cover;
-  }
-
-  .asautomation-block1 {
-    padding-bottom: 25px;
+    background-position: 50%;
   }
 
   .astechno-block {
@@ -2106,7 +2193,6 @@
 
   .asspeaker-block {
     max-width: 350px;
-    padding: 34px 16px 60px 16px;
   }
 
   .asblock9-list {
@@ -2138,7 +2224,6 @@
   }
 
   .asblock13 {
-    max-width: 251px;
     padding: 33px 16px 80px 16px;
   }
 
@@ -2181,6 +2266,32 @@
   .asblock15-title {
     max-width: 50%;
     width: 50%;
+  }
+
+  .asblock17-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .asblock17-text {
+    max-width: 90%;
+  }
+
+  .asblock20-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .asblock20-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .asblock21-container {
+    max-width: 300px;
+    padding-bottom: 50px;
   }
 }
 
