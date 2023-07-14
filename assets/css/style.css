@@ -24,13 +24,6 @@
 }
 
 /* TEXT */
-
-.astitle {
-  padding: 58px 0 36px 0;
-  font-size: 48px;
-  color: #fff;
-}
-
 .astext-black {
   color: #0f0f0f !important;
 }
@@ -49,6 +42,12 @@
 
 .astext-blue {
   color: #0296ea !important;
+}
+
+.astitle {
+  padding: 58px 0 36px 0;
+  font-size: 48px;
+  color: #fff;
 }
 
 .asdescription {
@@ -155,15 +154,13 @@
 .asbackground-info {
   display: flex;
   justify-content: center;
-  gap: 13px;
-  padding: 28px;
+  align-items: center;
+  gap: 10px;
   max-width: 578px;
-  min-height: 125px;
+  background-color: #e8e8e8;
+  padding: 10px;
   border-radius: 20px;
-  align-items: flex-start;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
+  margin-bottom: 10px;
 }
 
 .asbackground-chip1 {
@@ -889,12 +886,14 @@
   gap: 10px;
   padding: 32px 0 70px 60px;
 }
+
 .asautomation-title {
   max-width: 616px;
   color: #fff;
   font-size: 48px;
   font-weight: 500;
 }
+
 .asutomation-subtitle {
   max-width: 439px;
   color: #fff;
@@ -907,6 +906,25 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+}
+
+.asautomation-block2 {
+  margin-bottom: 35px;
+}
+
+.asutomation-subtitle2 {
+  margin: 12px 0 33px 0;
+  color: #0296ea;
+  font-size: 16px;
+}
+
+.asutomation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: #fff;
+  font-size: 16px;
+  list-style-position: inside;
 }
 
 .asblock8-wrapper {
@@ -972,24 +990,26 @@
   font-weight: 700;
 }
 
-.asutomation-subtitle2 {
-  margin: 12px 0 33px 0;
-  color: #0296ea;
-  font-size: 16px;
-}
-
-.asutomation-list {
+.asblock9-background2 {
+  max-width: 600px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  color: #fff;
-  font-size: 16px;
-  list-style-position: inside;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 65px;
+  padding: 78px 0 78px 94px;
 }
 
-.asautomation-block2 {
-  margin-bottom: 35px;
+.asblock9-list {
+  display: flex;
+  gap: 65px;
 }
+
+.asblock9-item {
+  display: flex;
+  flex-direction: column;
+}
+
 .asblock10-list {
   display: flex;
   flex-wrap: wrap;
@@ -997,6 +1017,7 @@
   row-gap: 25px;
   margin-top: 25px;
 }
+
 .asblock10-item {
   display: flex;
   width: 50%;
@@ -1007,6 +1028,11 @@
   display: flex;
   flex-direction: column;
   gap: 3px;
+}
+
+.asblock10-icon {
+  width: 32px;
+  height: 32px;
 }
 
 .astechno-block {
@@ -1041,31 +1067,6 @@
 .aslist2-icon {
   width: 28px;
   height: 28px;
-}
-
-.asblock9-background2 {
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 65px;
-  padding: 78px 0 78px 94px;
-}
-
-.asblock9-list {
-  display: flex;
-  gap: 65px;
-}
-
-.asblock9-item {
-  display: flex;
-  flex-direction: column;
-}
-
-.asblock10-icon {
-  width: 32px;
-  height: 32px;
 }
 
 .asblock11-wrapper {
@@ -1570,9 +1571,9 @@
   flex-direction: column;
   gap: 10px;
   max-width: 520px;
-  padding: 17px 48px 22px 29px;
-  background-position: top right;
-  background-repeat: no-repeat;
+  padding: 15px 25px;
+  background-color: #e8e8e8;
+  border-radius: 20px;
 }
 
 .asblock31-wrapper {
@@ -1740,26 +1741,29 @@
   }
 
   .aspreview {
-    margin: 32px 16px;
-  }
-
-  .aspreview-left {
-    padding: 0 16px;
-  }
-
-  .asautomation-block,
-  .astechno-block, .asblock36 {
-    padding-left: 16px;
-    padding-right: 16px;
+    margin: 32px 32px;
   }
 
   .asblock7-img {
     max-width: calc(341px - 16px);
   }
 
-  .asblock28, .asblock33 {
-    padding-left: 16px;
-    padding-right: 16px;
+  .aspreview-left {
+    padding: 0 32px;
+  }
+
+  .asautomation-block,
+  .asblock13,
+  .astechno-block,
+  .asblock36 {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .asblock28,
+  .asblock33 {
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   .asblock28-title {
@@ -1775,6 +1779,28 @@
   .ascontainer2 {
     max-width: 100%;
     padding: 0 16px;
+  }
+
+  .aspreview {
+    margin: 16px 16px;
+  }
+
+  .aspreview-left {
+    padding: 0 16px;
+  }
+
+  .asautomation-block,
+  .asblock13,
+  .astechno-block,
+  .asblock36 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .asblock28,
+  .asblock33 {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .asautomation-block1 {
@@ -1812,7 +1838,7 @@
   }
 
   .asbackground-case {
-    background-position: bottom right ;
+    background-position: bottom right;
     background-size: 50%;
   }
 
@@ -1872,7 +1898,6 @@
     max-width: 620px;
     padding-left: 16px;
   }
- 
 }
 
 @media (max-width: 768px) {
@@ -1976,7 +2001,7 @@
   .asbackground-cable {
     background-position: bottom right;
   }
-  
+
   .asbackground-control {
     background-size: 40%;
     background-position: 100% bottom;
@@ -1996,7 +2021,7 @@
     background-size: 40%;
     background-position: 100% center;
   }
-  
+
   .asbackground-asautomation1 {
     background-position: 10%;
     background-size: cover;
@@ -2065,7 +2090,6 @@
     right: 5%;
   }
 
-
   .asblock13 {
     max-width: 500px;
     padding: 33px 16px 80px 16px;
@@ -2111,7 +2135,7 @@
   .asblock19 {
     min-height: 620px;
   }
-  
+
   .asblock19-wrapper {
     max-width: 335px;
     top: 5%;
@@ -2141,7 +2165,7 @@
     max-width: 440px;
   }
 
-  .asblock32-wrapper1  {
+  .asblock32-wrapper1 {
     flex-direction: column;
   }
 
@@ -2168,11 +2192,11 @@
   .asblock35-list {
     grid-template-columns: 1fr;
   }
-  
+
   .asblock36 {
     max-width: 500px;
   }
-  
+
   .asblock36-title {
     font-size: 36px;
   }
@@ -2229,7 +2253,6 @@
     background-position: 50%;
   }
 
-  
   .asbackground-enginer {
     background-size: cover;
     background-position: 50%;
@@ -2239,7 +2262,6 @@
     background-size: 40%;
   }
 
-  
   .asbackground-techno {
     background-position: 50%;
   }
@@ -2497,8 +2519,13 @@
     grid-template-columns: 1fr;
   }
 
-  .asblock30  {
+  .asblock30 {
     grid-template-columns: 1fr;
+  }
+
+  .asblock30-info {
+    text-align: center;
+    margin-bottom: 32px;
   }
 
   .asblock31-wrapper {
@@ -2526,7 +2553,7 @@
   .asbackground-bridge1 {
     background-position: 30%;
   }
-  
+
   .asbackground-info {
     padding: 10px 5px 15px 10px;
   }
@@ -2655,8 +2682,9 @@
   .asblock32-badge {
     gap: 5px;
   }
-  
-  .asblock30-title, .asblock31-title {
+
+  .asblock30-title,
+  .asblock31-title {
     font-size: 28px;
   }
 }
