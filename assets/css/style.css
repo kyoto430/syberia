@@ -8,6 +8,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* border: 1px solid red; */
 }
 
 .asbody {
@@ -76,7 +77,7 @@
 }
 
 .astext-12 {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
 }
 
@@ -489,6 +490,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 42px;
+  margin-bottom: 42px;
   gap: 47px;
 }
 
@@ -520,6 +522,69 @@
 .ascomposition-item::marker {
   color: #3d89ec;
 }
+
+.astable {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-collapse:collapse;
+}
+
+.astable > tbody > tr > td{
+  text-align: center;
+  padding: 10px;
+}
+
+.asrow-1 {
+  background: #283c6d;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.asrow-2 {
+  text-align: center;
+  border-radius: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  background: #dbdbdb;
+}
+
+.asrow-3 {
+  border-left: 1px solid #0f0f0f;
+  border-bottom: 1px solid #0f0f0f;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.asrow-4 {
+  border-left: 1px solid #0f0f0f;
+  border-bottom: 1px solid #0f0f0f;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.asrow-5 {
+  border-left: 1px solid #0f0f0f;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.asrow-6 {
+  text-align: center;
+  border-radius: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  background: #dbdbdb;
+}
+
+.asrow-7 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  border-left: 1px solid #0f0f0f;
+}
+
 
 .asdetector-desc {
   max-width: 439px;
