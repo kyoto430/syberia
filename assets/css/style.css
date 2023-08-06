@@ -524,22 +524,132 @@
 }
 
 .astable {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 295px 295px 295px 295px;
+  grid-template-areas:
+    '. tab-row1 tab-row1 tab-row1'
+    '. tab-row2 tab-row2 tab-row2'
+    'tab-row3 tab-row3 tab-row3 tab-row3'
+    'tab-row4 tab-row4 tab-row4 tab-row4'
+    'tab-row5 tab-row5 tab-row5 tab-row5'
+    '. tab-row6 tab-row6 tab-row6'
+    'tab-row7 tab-row7 tab-row7 tab-row7'
+    '. . tab-row8 tab-row8';
   justify-content: center;
-  align-items: center;
-  border-collapse:collapse;
 }
 
-.astable > tbody > tr > td{
-  text-align: center;
-  padding: 10px;
-}
-
-.asrow-1 {
+.astable-block1 {
+  grid-area: tab-row1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   background: #283c6d;
   border-radius: 20px;
   color: #fff;
+  font-size: 20px;
+}
+
+.astable-block2 {
+  grid-area: tab-row2;
+}
+
+.astable-block3 {
+  grid-area: tab-row3;
+  display: flex;
+}
+
+.asrow-3 {
+  width: 30%;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #0f0f0f;
+  border-bottom: 1px solid #0f0f0f;
+}
+
+.asrow-4 {
+  width: 30%;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #0f0f0f;
+  border-bottom: 1px solid #0f0f0f;
+}
+
+.asrow-5 {
+  width: 30%;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #0f0f0f;
+}
+
+.astable-block4 {
+  grid-area: tab-row4;
+  display: flex;
+}
+
+.astable-block5 {
+  grid-area: tab-row5;
+  display: flex;
+}
+
+.astable-block6 {
+  grid-area: tab-row6;
+}
+
+.asrow-2,
+.asrow-6 {
+  padding: 10px 0;
+}
+
+.astable-block7 {
+  grid-area: tab-row7;
+  display: flex;
+}
+
+.asrow-8 {
+  width: 100%;
+  font-weight: bold;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.astable-block8 {
+  grid-area: tab-row8;
+}
+
+.asrow-1:nth-child(1) {
+  font-weight: bold;
+}
+
+.asrow-1:nth-child(2) {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+.asrow-1 {
+  width: 30%;
+  padding: 10px 30px;
+}
+
+.asrow-1 > span {
+  font-size: 14px;
+}
+
+.asrow-1 > p {
+  font-weight: bold;
+}
+
+.asrow-icon {
+  width: 16px;
+  height: 16px;
 }
 
 .asrow-2 {
@@ -551,21 +661,16 @@
 }
 
 .asrow-3 {
-  border-left: 1px solid #0f0f0f;
-  border-bottom: 1px solid #0f0f0f;
   font-weight: bold;
   font-size: 14px;
 }
 
 .asrow-4 {
-  border-left: 1px solid #0f0f0f;
-  border-bottom: 1px solid #0f0f0f;
   font-weight: bold;
   font-size: 14px;
 }
 
 .asrow-5 {
-  border-left: 1px solid #0f0f0f;
   font-weight: bold;
   font-size: 14px;
 }
@@ -579,12 +684,18 @@
 }
 
 .asrow-7 {
-  text-align: center;
+  width: 32%;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   font-weight: bold;
   font-size: 14px;
-  border-left: 1px solid #0f0f0f;
 }
 
+.asrow-8 {
+  border-left: 1px solid #0f0f0f;
+}
 
 .asdetector-desc {
   max-width: 439px;
@@ -1834,6 +1945,11 @@
   .asblock28-title {
     font-size: 36px;
   }
+
+  .astable {
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -2265,6 +2381,35 @@
   .asblock36-title {
     font-size: 36px;
   }
+
+  .astable {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .astable-block1 {
+    flex-direction: column;
+  }
+
+  .asrow-1:nth-child(2) {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-left: none;
+    border-right: none;
+  }
+
+  .asrow-1 {
+    width: 100%;
+  }
+  .asrow-2,
+  .asrow-3,
+  .asrow-4,
+  .asrow-5,
+  .asrow-8 {
+    padding: 5px 15px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2595,6 +2740,25 @@
 
   .asblock31-wrapper {
     flex-direction: column;
+  }
+
+  .astable-block3,
+  .astable-block4,
+  .astable-block5 {
+    flex-direction: column;
+  }
+  .asrow-2,
+  .asrow-3,
+  .asrow-4,
+  .asrow-6,
+  .asrow-7,
+  .asrow-8 {
+    width: 100%;
+  }
+
+  .asrow-5 {
+    width: 100%;
+    border-top: 1px solid #0f0f0f;
   }
 }
 
